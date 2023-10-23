@@ -123,7 +123,7 @@ body ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     background: rgba(black, 0.5);
     background:
     linear-gradient(
