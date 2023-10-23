@@ -10,7 +10,14 @@ p{
     font-family: 'Prompt', sans-serif;
 }
 
+h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Prompt', sans-serif; 
+}
 
+div{
+    box-sizing: border-box;
+}
 
 
 /* Menu bar */
@@ -133,7 +140,8 @@ body ul li a:hover{
 
 .firstbox{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    width: 100%;
 }
 
 .picbox{
@@ -143,7 +151,12 @@ body ul li a:hover{
     display: block;
 }
 
-
+#Picture{
+    text-align: center;
+    margin: 0; 
+    width: 100%;
+    height: 500px;
+}
 .introduce-box{
     background-color: rgb(227, 222, 222);
     border: 5px solid rgb(29, 7, 151);
@@ -154,13 +167,23 @@ body ul li a:hover{
 }
 
 .whitebox{
-    max-width: 800px;
+    max-width: 800;
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
 }
+
+.introducingBox{
+    width:50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+
 
 .whiteboxclone{
     max-width: 800px;
@@ -188,6 +211,31 @@ body ul li a:hover{
     border: 0cm;
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Prompt', sans-serif;
+}
+
+.information_box{
+    background-color:#fbfdfb;
+    display: flex;
+  
+}
+
+
+.mypic{
+    width: 465.5px;
+    height: 660.5px;
+    margin: 100px;
+}
+
+.first_half{
+    width: 50%;
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.second_half{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* adviser */
@@ -259,11 +307,12 @@ footer{
 
 .afooter{
     text-decoration: none;
-    color: rgb(0, 0, 0);"
+    color: rgb(255, 255, 255);"
 }
 
 .afooter:hover{
     text-decoration: underline;
+    color: black;
 }
 
 /* Activities */
@@ -316,3 +365,41 @@ button {
 }
 
 */
+
+
+/* Responsive */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media only screen and (min-width: 390px) and (max-width: 810px) { 
+    /* Your Styles... */ 
+         /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+
+
+    .information_box{
+        display: block;
+    }
+
+    .inf_text{
+        margin-left: 10%;
+    }
+    
+    .mypic{
+        margin: 10%;
+    }
+}
