@@ -29,6 +29,41 @@ div{
     width: 100%;
 }
 
+.toggle{
+    cursor: pointer;
+
+}
+
+.linebar{
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.linebar::before,.linebar::after{
+    content:"" ;
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.linebar::before{
+    top: 5px;
+}
+
+.linebar::after{
+    top: -5px;
+}
+
+
+
+/*Mobile menu*/
+
+
 
  /* Body part */
 .navbar{
@@ -124,6 +159,7 @@ body ul li a:hover{
     align-items: center;
     justify-items: center;
     flex-direction: column;
+    width: 100%;
 }
 .afb-button{
     background-color: white; 
@@ -174,6 +210,7 @@ body ul li a:hover{
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+
 }
 
 .introducingBox{
@@ -293,10 +330,17 @@ body ul li a:hover{
     display: block;
 }  
 
+.videosize{
+    width: 560px;
+    height: 300px;
+}
+
+
 /* Footer */
 footer{
     margin: 0;
     height: 100px;
+    width: 100%;
 }
 
 .footerbox{
@@ -339,7 +383,78 @@ a{
 button {
     margin: 0;
     padding: 0;
+    
 }
+
+
+/* Responsive */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* For mobile */
+[class*="col-"]{
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) { 
+
+    .information_box{
+        display: block;
+    }
+
+    .inf_text{
+        margin-left: 10%;
+        width: 100%;
+    }
+    
+    .mypic{
+        margin: 0;
+        width: 100vw;
+    }
+    
+    .footerbox{
+        width: 100vw;
+    }
+
+    .whitebox{
+        width: 80vw;
+    }
+
+    .videosize{
+        width: 70vw;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+   
+    .navbar{
+        display: row;
+    }
+
+    .barbox{
+        position: fixed;
+        width: 100%;
+    }
+
+   
+}
+
+
+
+
 /* recycle bin
 
 
@@ -366,40 +481,3 @@ button {
 }
 
 */
-
-
-/* Responsive */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-/* For mobile */
-[class*="col-"]{
-    width: 100%;
-}
-
-
-@media only screen and (max-width: 810px) { 
-
-    .information_box{
-        display: block;
-    }
-
-    .inf_text{
-        margin-left: 10%;
-        width: 100%;
-    }
-    
-    .mypic{
-        margin: 10%;
-    }
-}

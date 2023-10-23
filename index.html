@@ -12,7 +12,9 @@
 <body> 
     <!-- Menu bar -->
     <div class="navbar">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs" class="logo" target="_blank">Toninwza</a>
+        
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs" class="logo" target="_blank">Toninwza</a> <br>
+        
         <ul class="ul-navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="html/myAdvisor.html">My advisor</a></li>
@@ -25,11 +27,14 @@
                 <div class="dropdown-content">
                     <a href="html/CSTUOrientation.html">CSTUOrientation</a>
                     <a href="html/DomeBasket.html">DomeBasket</a>
-                    <a href="html/csesport.html">csesport</a>
+                    <a href="html/csesport.html">Cs E-sport</a>
                   </div>
             </div>
-            <li><a href="#Contact">Contact</a></li>
+            <div class="barbox">
+                <li><a href="#Contact">Contact</a></li>
+            </div>
         </ul>
+       
     </div>
     
     <div class="banner-area" id="home">
@@ -48,11 +53,12 @@
     </div>
     
     <div class=" information_box">
-        <div class="col-6 first_half">
+        <div class="col-6 first_half" id="info">
             <img src="image/picpig.jpg" class="mypic">
         </div>
 
         <div class="col-6 second_half">
+            <div style="border: 1cm; border-color: black;">
             <div>
                 <h1 style="text-align: center;"> About me </h1>
             </div>
@@ -78,6 +84,7 @@
                     <a style="text-decoration: none; color: black;" href="https://www.youtube.com/watch?v=kQssJIEEp0k" target=”_blank”>Submit</a>
                 </button>
             </div>
+            </div>
         </div>
 
     </div>
@@ -86,13 +93,11 @@
     <div style="display: flex; justify-content: center; text-align: center;">
         <div class="whitebox">
             <p style="font-size: x-large;">Self-Introducing Video</p>
-            <video src='VDO/self.mp4'  width = "560" height = "300" controls id="Video"> </video>
+            <video src='VDO/self.mp4'  controls id="Video" class="videosize"> </video>
         </div>
     </div>
 
-    <a href="#menu">
-        &#9776; Menu
-      </a>
+  
     
     <footer id="Contact">
         <div class="footerbox">
