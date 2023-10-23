@@ -444,12 +444,18 @@ button {
         display: row;
     }
 
-    .barbox{
-        position: fixed;
-        width: 100%;
+    .dropdown{
+     
+        display: none;
     }
+}
 
-   
+/* for a little tablet eiei */
+
+@media only screen and (min-width: 600px) and (max-width: 1030px) {
+    .logo{
+        text-align: center;
+    }
 }
 
 
